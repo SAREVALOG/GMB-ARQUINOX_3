@@ -33,7 +33,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
 
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,14 +44,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img id="logo-img" src="img/solo_logo.png"> </a>
-                 <a class="navbar-brand" href="index.html">GMB ARQUINOX S.A.S.</a>
+                <a class="navbar-brand" href="#"><img id="logo-img" src="img/solo_logo.png" class="hidden-xs hidden-sm"> </a>
+                 <div class="navbar-brand">
+                    <h3> GMB ARQUINOX </h3>
+                    <span> Montajes Arquitectonicos </span>
+                 </div>                          
                 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    
+                     <li class="active">
+                        <a href="index.html">Inicio</a>
+                    </li>
                     <li>
                         <a href="nosotros.html">Nosotros</a>
                     </li>
@@ -87,60 +92,7 @@
                     <li>
                         <a href="#" data-toggle="modal" data-target="#myModal"> Contactenos </a>
                     </li>
-                    <!-- <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li> 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li> -->
+                   
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -206,19 +158,42 @@ Escriba sus inquietudes...</textarea>
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+
             <!--<li data-target="#myCarousel" data-slide-to="2"></li> -->
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+            <div class="item">
+                <div class="fill" style="background-image:url('pic_label/intro-6.jpg');"></div>
+                <!-- <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div> -->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('pic_label/intro-1.jpg');"></div>
+                <!-- <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div> -->
+            </div>
             <div class="item active">
-                <div class="fill" style="background-image:url('img/intro-4-lg.jpg');"></div>
+                <div class="fill" style="background-image:url('pic_label/intro-4-lg.jpg');"></div>
                 <!-- <div class="carousel-caption">
                     <h2>Caption 1</h2>
                 </div> -->
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/intro-5-lg.jpg');"></div>
+                <div class="fill" style="background-image:url('pic_label/intro-5-lg.jpg');"></div>
+                <!-- <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div> -->
+            </div>
+          
+            <div class="item">
+                <div class="fill" style="background-image:url('pic_label/intro-3.jpg');"></div>
                 <!-- <div class="carousel-caption">
                     <h2>Caption 2</h2>
                 </div> -->
@@ -231,13 +206,7 @@ Escriba sus inquietudes...</textarea>
             </div>
         </div>
 
-        <!-- Controls -->
-<!--        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>   -->
+
     </header>
 
     <!-- Page Content -->
@@ -253,13 +222,13 @@ Escriba sus inquietudes...</textarea>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Portafolio</h4>
+                        <h4>Portafolio</h4>
                     </div>
                     <div class="panel-body">
                     	
                     	 <a href="portafolio.html"> <img class="img-responsive" src="img/glass1.jpg" alt=""> </a>
-                		<hr>
-                        <p >Tecnologia avanzada hace que nuestros acabados en accesorios y piezas sean de excelente calidad.</p>
+                		<br>
+                    <!--    <p >Tecnologia avanzada hace que nuestros acabados en accesorios y piezas sean de excelente calidad.</p> -->
                    		<p > Ofrecemos con una amplia gama de productos metalmetalicos para el sector arquitectonico e industrial que son competidores e innovadores en el mercado Nacional. </p>
                      <!--   <a href="#" class="btn btn-default">Learn More</a> -->
                     </div>
@@ -268,14 +237,14 @@ Escriba sus inquietudes...</textarea>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Nosotros</h4>
+                        <h4>Nosotros</h4>
                     </div>
                     <div class="panel-body">
                     	<a href="nosotros.html"> <img class="img-responsive" src="img/glass2.jpg" alt=""> </a>
 
-                 
-                 <hr>       <p>Posicionada en el mercado desde 1992, dedicados a la investigacion e innovacion de nuevos productos y tecnologia para nuestros clientes.</p>
-                    	<p>Contamos con personal calificado tanto en instalacion como en fabricacion, garantizando la calidad de nuestros productoss.</p>
+                        <br>
+                       <p>Posicionada en el mercado desde 1992, dedicados a la investigacion e innovacion de nuevos productos y tecnologia para nuestros clientes.</p>
+                    <!--	<p>Contamos con personal calificado tanto en instalacion como en fabricacion, garantizando la calidad de nuestros productoss.</p> -->
                         
                     </div>
                 </div>
@@ -283,13 +252,12 @@ Escriba sus inquietudes...</textarea>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Experiencia</h4>
+                        <h4>Experiencia</h4>
                     </div>
                     <div class="panel-body">
                     	<a href="experiencia.html"> <img class="img-responsive" src="img/glass3.jpg" alt=""> </a>
-                    	<hr>
-					    <p >Diferentes empresas confiaron en nosotros para la realizacion de sus proyectos.</p>
-                   		<p >Conozca algunos de los clientes que nos identifican como sello de calidad.</p>
+                    	<br>
+					    <p >Diferentes empresas confiaron en nosotros para la realizacion de sus proyectos. Conozca algunos de los clientes que nos identifican como sello de calidad.</p>
                         
                     </div>
                 </div>
@@ -297,115 +265,45 @@ Escriba sus inquietudes...</textarea>
         </div>
         <!-- /.row -->
 
-        <!-- Portfolio Section -->
-<!--        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div> -->
-        <!-- /.row -->
+  
+    </div>
 
-        <!-- Features Section -->
-     <!--   <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
-            </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-            </div>
-        </div> -->
-        <!-- /.row -->
+  <div class="banner">
 
-        <hr>
+        <div class="container">
 
-        <!-- Call to Action Section -->
-<!--        <div class="well">
             <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                <div class="col-lg-6 ">
+                    <h2>Estemos en contacto:</h2>
                 </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                <div id="banner-info" class="col-lg-4 col-lg-offset-2">
+                    <i class="fa fa-phone"></i>: +57 (1) 230 66 31<br>
+                    <i class="fa fa-phone"></i>: +57 313 296 9330 <br>
+                    <i class="fa fa-envelope"></i>: 
+                    <a href="mailto:gmbtrabajossami@hotmail.com">gmbtrabajossami@hotmail.com</a> <br>
+                    Calle 39B bis A 72G 48 Sur<br>
+                    Bogota<br>
+                    COLOMBIA<br> <br>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        <!-- /.container -->
+
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <p class="copyright text-muted small">Copyright &copy; GMB ARQUINOX S.A.S. 2016 Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
-
-        <hr> -->
-
+    </footer>
 
 
-    </div>
-    <!-- /.container -->
-
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Contacto:</span><br>
-		       
-        		<i class="fa fa-phone"></i>: +57 (1) 230 66 31<br>
-                <i class="fa fa-phone"></i>: +57 313 296 9330 <br>
-                <i class="fa fa-envelope"></i>: 
-                <a href="mailto:gmbtrabajossami@hotmail.com">gmbtrabajossami@hotmail.com</a>
-          <hr class="visible-xs">
-        </section>
-        <section id="address" class="col-sm-4">
-          <span>Direccion:</span><br>
-           		Calle 39B bis A 72G 48 Sur<br>
-                Bogota<br>
-                COLOMBIA<br>
-          <hr class="visible-xs">
-        </section>
-        <section id="testimonials" class="col-xs-offset-1 col-sm-3 hidden-xs">
-          <img id="logo-2" src="img/logo_b_w.png">
-        </section>
-      </div>
-      <div class="text-center">&copy; Copyright GMB ARQUINOX 2016 Todos los derechos reservados.</div>
-    </div>
-  </footer>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
