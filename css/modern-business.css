@@ -113,7 +113,7 @@ header.carousel .fill {
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
-/* 404 Page Styles */
+
 
 .panel:hover{
 -webkit-transition: all 200ms ease-in;
@@ -124,6 +124,23 @@ header.carousel .fill {
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
     transform: scale(1.1);
+}
+
+textarea{
+    width: 100%;
+}
+
+img{
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+}
+
+
+/* Nosotros Page Styles */
+#pic_nosotros{
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+	margin-top: 30px;
 }
 
 /* Pricing Page Styles */
@@ -179,10 +196,6 @@ margin-right:10px;
     margin-top: 0;
 }
 
-img{
-	border-bottom-left-radius: 2em;
-	border-bottom-right-radius: 2em;
-}
 
 h4{
 	text-align: center;
