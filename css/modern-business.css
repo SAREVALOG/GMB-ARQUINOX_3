@@ -69,7 +69,7 @@ body {
 
 
 header.carousel {
-    height: 70%;
+    height: 95%;
 }
 
 header.carousel .item,
@@ -101,7 +101,9 @@ header.carousel .fill {
 }
 .panel-default {
     border-color: #ddd;
-
+    margin-top: -25px;
+    transform: scale(0.8);
+    
 }
 .panel {
     margin-bottom: 20px;
@@ -222,9 +224,14 @@ p.copyright {
     }
 
     header.carousel .carousel {
-        height: 70%;
+        height: 90%;
     }
-    }
+    .panel-default {
+    border-color: #ddd;
+    margin-top: 0px;
+    transform: scale(1);    
+	}
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.banner {
